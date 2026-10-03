@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leave Desk · SOA Demo</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="/">↗ <strong>Leave Desk</strong><span>SOA / Discord</span></a><div class="identity">Nhân viên mẫu <span class="avatar">NV</span></div></header>
+<main>
+  <div class="intro"><div><p class="eyebrow">KHÔNG GIAN LÀM VIỆC</p><h1>Xin nghỉ phép.<br><span>Nhận kết quả tại đây.</span></h1></div><div class="connection"><span id="connection-dot"></span><div><strong id="connection-label">Đang kiểm tra kết nối</strong></div></div></div>
+  <div id="notice" role="status" hidden></div>
+  <div class="workspace"><section class="form-panel"><p class="eyebrow">01 / YÊU CẦU MỚI</p><h2>Khoảng nghỉ của bạn</h2><form id="leave-form"><div class="date-row"><label>Từ ngày<input name="fromDate" id="from-date" type="date" required></label><label>Đến ngày<input name="toDate" id="to-date" type="date" required></label></div><label>Lý do<textarea name="reason" placeholder="Thêm thông tin cho yêu cầu của bạn…" maxlength="500" rows="4" required></textarea></label><button class="primary" id="submit" type="submit">Gửi yêu cầu <span>↗</span></button></form></section>
+   <section class="requests"><div class="section-heading"><div><p class="eyebrow">02 / THEO DÕI</p><h2>Yêu cầu của bạn</h2></div><button class="text-button" id="refresh">Làm mới ↻</button></div><div id="request-list"><p class="empty">Đang tải yêu cầu…</p></div></section></div>
+</main><footer>Discord Webhooks / FastAPI <span>Demo học thuật · dữ liệu nhân viên mẫu</span></footer>
+<script src="app.js?v=5" defer></script></body></html>
