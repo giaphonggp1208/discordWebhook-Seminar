@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.tools/
+.build/
+node_modules/
+.env
+data/
+*.log
+.idea/
